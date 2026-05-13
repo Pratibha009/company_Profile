@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftbid Logistics - Presentation</title>
+
+    <!-- Tailwind CSS for Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1a3a5c',
+                        orange: '#ff5a00',
+                        lightNavy: '#234b77',
+                        bg: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-gray-900 flex flex-col items-center justify-center p-4 sm:p-8 font-sans">
+
+    <!-- Presentation Container -->
+    <div
+        class="w-full max-w-[1200px] aspect-[16/9] bg-white rounded-xl shadow-2xl overflow-hidden relative flex flex-col">
+
+        <!-- Main Slide Content -->
+        <div class="flex-1 relative" id="slider-container">
+
+            <!-- Slide 1: Cover -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col items-center justify-center text-center p-12 overflow-hidden bg-navy">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                    <div class="absolute top-[-10%] right-[-5%] w-96 h-96 rounded-full border-[20px] border-orange">
+                    </div>
+                    <div
+                        class="absolute bottom-[-20%] left-[-10%] w-[40rem] h-[40rem] rounded-full border-[40px] border-orange">
+                    </div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center">
+                    <div class="mb-6 border-b-4 pb-6 border-orange">
+                        <img src="SBL-Logo.png" alt="Company Logo" width="200" height="200"
+                            style="display:block; margin-left:auto; margin-right:auto;">
+
+                        <p class="text-orange text-2xl font-bold tracking-[0.3em] uppercase">Delivering Trust</p>
+                    </div>
+                    <h2 class="text-5xl font-bold text-white mt-4 mb-8">Swiftbid Logistics</h2>
+                    <p class="text-xl text-gray-300 max-w-2xl leading-relaxed font-light">
+                        A logistics company with innovation and excellence, ensuring every delivery is seamless and
+                        reliable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Our Company -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col p-12 bg-white">
+                <div class="flex justify-between items-start mb-10 w-full">
+                    <div>
+                        <h2 class="text-navy text-4xl font-bold uppercase tracking-wide">Our Company</h2>
+                        <div class="bg-orange h-1.5 w-24 mt-3 rounded-full"></div>
+                    </div>
+                    <div class="text-right">
+                        <h1 class="text-navy text-2xl font-black tracking-tighter">SBL</h1>
+                        <p class="text-orange text-sm font-semibold tracking-widest uppercase">Delivering Trust</p>
+                    </div>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-sm border-l-8 border-orange flex-1 max-w-4xl">
+                        <h3 class="text-navy text-3xl font-bold mb-6">Welcome to Swiftbid Logistics</h3>
+                        <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                            We specialize in providing comprehensive logistics and supply chain solutions designed to
+                            meet the dynamic needs of our clients.
+                        </p>
+                        <p class="text-xl text-gray-700 leading-relaxed">
+                            Our commitment to excellence, reliability, and innovation drives us to deliver efficient
+                            services that exceed expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: About Us -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col p-12 bg-white">
+                <div class="flex justify-between items-start mb-10 w-full">
+                    <div>
+                        <h2 class="text-navy text-4xl font-bold uppercase tracking-wide">About Us</h2>
+                        <div class="bg-orange h-1.5 w-24 mt-3 rounded-full"></div>
+                    </div>
+                    <div class="text-right">
+                        <h1 class="text-navy text-2xl font-black tracking-tighter">SBL</h1>
+                        <p class="text-orange text-sm font-semibold tracking-widest uppercase">Delivering Trust</p>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col justify-center max-w-5xl mx-auto w-full gap-8">
+                    <div class="flex items-start gap-6">
+                        <div class="mt-1 bg-gray-100 p-4 rounded-full text-orange">
+                            <i data-lucide="clock" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-navy text-2xl font-bold mb-2">Our Origins</h4>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                SwiftBid Logistics began in 2011 as a passenger transport company in Jammu & Kashmir.
+                                After a decade of steady growth, operations paused during COVID-19.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div class="mt-1 bg-gray-100 p-4 rounded-full text-orange">
+                            <i data-lucide="trending-up" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-navy text-2xl font-bold mb-2">New Focus</h4>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                In August 2024, we relaunched with a new focus on B2B logistics. Today, we offer
+                                reliable, tailored logistics solutions for businesses across the region.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div class="mt-1 bg-gray-100 p-4 rounded-full text-orange">
+                            <i data-lucide="users" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-navy text-2xl font-bold mb-2">Our Team</h4>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Our expert team is dedicated to ensuring timely delivery and building long-term
+                                partnerships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Vision & Mission -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col p-12 bg-gray-50">
+                <div class="flex justify-between items-start mb-10 w-full">
+                    <div>
+                        <h2 class="text-navy text-4xl font-bold uppercase tracking-wide">Vision & Mission</h2>
+                        <div class="bg-orange h-1.5 w-24 mt-3 rounded-full"></div>
+                    </div>
+                    <div class="text-right">
+                        <h1 class="text-navy text-2xl font-black tracking-tighter">SBL</h1>
+                        <p class="text-orange text-sm font-semibold tracking-widest uppercase">Delivering Trust</p>
+                    </div>
+                </div>
+                <div class="flex-1 flex gap-8 items-stretch justify-center max-w-6xl mx-auto w-full">
+                    <div
+                        class="flex-1 bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col">
+                        <div class="p-8 flex-1">
+                            <div class="mb-6 inline-block p-4 rounded-2xl bg-navy/15 text-navy">
+                                <i data-lucide="eye" class="w-12 h-12"></i>
+                            </div>
+                            <h3 class="text-navy text-3xl font-bold mb-6">Our Vision</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                To become the leading logistics provider in the region, known for exceptional service,
+                                operational excellence, and a commitment to the success of our clients.
+                            </p>
+                        </div>
+                        <div class="h-3 w-full bg-navy"></div>
+                    </div>
+                    <div
+                        class="flex-1 bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 flex flex-col">
+                        <div class="p-8 flex-1">
+                            <div class="mb-6 inline-block p-4 rounded-2xl bg-orange/15 text-orange">
+                                <i data-lucide="target" class="w-12 h-12"></i>
+                            </div>
+                            <h3 class="text-navy text-3xl font-bold mb-6">Our Mission</h3>
+                            <ul class="space-y-4">
+                                <li class="flex gap-3 text-lg text-gray-600 leading-relaxed">
+                                    <span class="text-orange mt-1.5">•</span>
+                                    <span>To deliver reliable, efficient, and tailored supply chain services that
+                                        empower our clients' growth.</span>
+                                </li>
+                                <li class="flex gap-3 text-lg text-gray-600 leading-relaxed">
+                                    <span class="text-orange mt-1.5">•</span>
+                                    <span>To reduce logistics costs and contribute to lowering the transportation
+                                        cost-to-GDP ratio.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="h-3 w-full bg-orange"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Our Services -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col p-12 bg-white">
+                <div class="flex justify-between items-start mb-10 w-full">
+                    <div>
+                        <h2 class="text-navy text-4xl font-bold uppercase tracking-wide">Our Services</h2>
+                        <div class="bg-orange h-1.5 w-24 mt-3 rounded-full"></div>
+                    </div>
+                    <div class="text-right">
+                        <h1 class="text-navy text-2xl font-black tracking-tighter">SBL</h1>
+                        <p class="text-orange text-sm font-semibold tracking-widest uppercase">Delivering Trust</p>
+                    </div>
+                </div>
+                <div class="flex-1 grid grid-cols-2 gap-6 max-w-5xl mx-auto w-full items-center">
+
+                    <div
+                        class="flex items-center gap-6 p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition-shadow group">
+                        <div class="p-4 rounded-lg transition-colors duration-300 bg-navy text-white">
+                            <i data-lucide="settings" class="w-10 h-10"></i>
+                        </div>
+                        <h4
+                            class="text-xl font-semibold text-gray-800 leading-snug group-hover:text-orange transition-colors">
+                            Comprehensive logistics management</h4>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-6 p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition-shadow group">
+                        <div class="p-4 rounded-lg transition-colors duration-300 bg-navy text-white">
+                            <i data-lucide="package" class="w-10 h-10"></i>
+                        </div>
+                        <h4
+                            class="text-xl font-semibold text-gray-800 leading-snug group-hover:text-orange transition-colors">
+                            Warehousing and inventory control</h4>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-6 p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition-shadow group">
+                        <div class="p-4 rounded-lg transition-colors duration-300 bg-navy text-white">
+                            <i data-lucide="truck" class="w-10 h-10"></i>
+                        </div>
+                        <h4
+                            class="text-xl font-semibold text-gray-800 leading-snug group-hover:text-orange transition-colors">
+                            Transportation and freight forwarding</h4>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-6 p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-md transition-shadow group">
+                        <div class="p-4 rounded-lg transition-colors duration-300 bg-navy text-white">
+                            <i data-lucide="trending-up" class="w-10 h-10"></i>
+                        </div>
+                        <h4
+                            class="text-xl font-semibold text-gray-800 leading-snug group-hover:text-orange transition-colors">
+                            Supply chain consulting</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Slide 6: Why Choose Us -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col p-12 bg-navy text-white">
+                <div class="flex justify-between items-start mb-10 w-full">
+                    <div>
+                        <h2 class="text-white text-4xl font-bold uppercase tracking-wide">Why Choose Us</h2>
+                        <div class="bg-orange h-1.5 w-24 mt-3 rounded-full"></div>
+                    </div>
+                    <div class="text-right">
+                        <h1 class="text-white text-2xl font-black tracking-tighter">SBL</h1>
+                        <p class="text-orange text-sm font-semibold tracking-widest uppercase">Delivering Trust</p>
+                    </div>
+                </div>
+                <div class="flex-1 flex items-center justify-center max-w-4xl mx-auto w-full">
+                    <div class="grid grid-cols-1 gap-6 w-full">
+                        <div
+                            class="flex items-center gap-5 bg-white/10 p-5 rounded-xl border border-white/5 hover:bg-white/15 transition-colors">
+                            <i data-lucide="check-circle" class="text-orange w-8 h-8 flex-shrink-0"></i>
+                            <span class="text-xl font-medium">Proven industry experience and expertise</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-5 bg-white/10 p-5 rounded-xl border border-white/5 hover:bg-white/15 transition-colors">
+                            <i data-lucide="check-circle" class="text-orange w-8 h-8 flex-shrink-0"></i>
+                            <span class="text-xl font-medium">Strong commitment to trust and reliability</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-5 bg-white/10 p-5 rounded-xl border border-white/5 hover:bg-white/15 transition-colors">
+                            <i data-lucide="check-circle" class="text-orange w-8 h-8 flex-shrink-0"></i>
+                            <span class="text-xl font-medium">Dedicated to timely delivery and customer
+                                satisfaction</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-5 bg-white/10 p-5 rounded-xl border border-white/5 hover:bg-white/15 transition-colors">
+                            <i data-lucide="check-circle" class="text-orange w-8 h-8 flex-shrink-0"></i>
+                            <span class="text-xl font-medium">Advanced infrastructure and technology integration</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-5 bg-white/10 p-5 rounded-xl border border-white/5 hover:bg-white/15 transition-colors">
+                            <i data-lucide="check-circle" class="text-orange w-8 h-8 flex-shrink-0"></i>
+                            <span class="text-xl font-medium">Flexible and customized solutions for diverse needs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Contact Us -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col p-12 bg-white">
+                <div class="flex justify-between items-start mb-10 w-full">
+                    <div>
+                        <h2 class="text-navy text-4xl font-bold uppercase tracking-wide">Contact Us</h2>
+                        <div class="bg-orange h-1.5 w-24 mt-3 rounded-full"></div>
+                    </div>
+                    <div class="text-right">
+                        <h1 class="text-navy text-2xl font-black tracking-tighter">SBL</h1>
+                        <p class="text-orange text-sm font-semibold tracking-widest uppercase">Delivering Trust</p>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col justify-center items-center">
+                    <div
+                        class="w-full max-w-4xl bg-gray-50 rounded-3xl p-10 shadow-lg border-t-8 border-orange flex flex-col gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 rounded-full bg-white shadow-sm text-navy">
+                                    <i data-lucide="building-2" class="w-7 h-7"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-sm font-bold uppercase tracking-wider text-gray-500 mb-1">Head
+                                        Office</h5>
+                                    <p class="text-lg font-semibold text-gray-800">Swiftbid Logistics</p>
+                                    <p class="text-gray-600">Talab Tillo, Jammu</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="p-3 rounded-full bg-white shadow-sm text-navy">
+                                    <i data-lucide="map-pin" class="w-7 h-7"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-sm font-bold uppercase tracking-wider text-gray-500 mb-1">Branch
+                                        Office</h5>
+                                    <p class="text-lg font-semibold text-gray-800">Narwal Branch</p>
+                                    <p class="text-gray-600">Narwal, Jammu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-px w-full bg-gray-200 my-2"></div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="flex items-center gap-4">
+                                <div class="p-3 rounded-full bg-white shadow-sm text-orange">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Email
+                                    </h5>
+                                    <p class="text-gray-800 font-medium truncate">swiftbidlogistics@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="p-3 rounded-full bg-white shadow-sm text-orange">
+                                    <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Phone
+                                    </h5>
+                                    <p class="text-gray-800 font-medium">9622551286</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="p-3 rounded-full bg-white shadow-sm text-orange">
+                                    <i data-lucide="globe" class="w-6 h-6"></i>
+                                </div>
+                                <div class="overflow-hidden">
+                                    <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-0.5">Website
+                                    </h5>
+                                    <p class="text-gray-800 font-medium truncate">www.swiftbidlogistics.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Thank You -->
+            <div
+                class="slide absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out flex flex-col items-center justify-center text-center p-12 overflow-hidden bg-navy">
+                <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
+                    <div class="absolute top-[20%] right-[10%] w-64 h-64 rounded-full border-[15px] border-orange">
+                    </div>
+                    <div class="absolute bottom-[10%] left-[5%] w-96 h-96 rounded-full border-[25px] border-orange">
+                    </div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center">
+                    <h2 class="text-7xl font-black text-white mb-6 tracking-wide">Thank You</h2>
+                    <div class="h-2 w-32 mb-8 rounded-full bg-orange"></div>
+                    <p class="text-2xl text-gray-300 max-w-2xl leading-relaxed font-light mb-12">
+                        We look forward to delivering trust and excellence for your business.
+                    </p>
+                    <div
+                        class="flex flex-col items-center bg-white/5 p-8 rounded-2xl border border-white/10 backdrop-blur-sm">
+                        <h1 class="text-6xl font-black text-white tracking-tighter mb-2">SBL</h1>
+                        <p class="text-orange text-xl font-bold tracking-[0.3em] uppercase">Swiftbid Logistics</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="h-16 bg-gray-900 text-white flex items-center justify-between px-6 z-20">
+            <!-- Progress Indicator -->
+            <div class="flex gap-2" id="dots-container">
+                <button onclick="goToSlide(0)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-8 bg-orange"
+                    aria-label="Go to slide 1"></button>
+                <button onclick="goToSlide(1)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 2"></button>
+                <button onclick="goToSlide(2)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 3"></button>
+                <button onclick="goToSlide(3)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 4"></button>
+                <button onclick="goToSlide(4)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 5"></button>
+                <button onclick="goToSlide(5)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 6"></button>
+                <button onclick="goToSlide(6)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 7"></button>
+                <button onclick="goToSlide(7)"
+                    class="nav-dot h-2.5 rounded-full transition-all duration-300 w-2.5 bg-gray-600 hover:bg-gray-400"
+                    aria-label="Go to slide 8"></button>
+            </div>
+
+            <div class="text-gray-400 font-medium text-sm" id="slide-counter">1 / 8</div>
+
+            <!-- Controls -->
+            <div class="flex gap-3">
+                <button id="prev-btn" onclick="prevSlide()"
+                    class="p-2 rounded flex items-center justify-center transition-colors text-gray-600 cursor-not-allowed">
+                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                </button>
+                <button id="next-btn" onclick="nextSlide()"
+                    class="p-2 rounded flex items-center justify-center transition-colors text-white hover:bg-gray-800 hover:text-orange">
+                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Keyboard instructions -->
+    <p class="text-gray-500 mt-6 text-sm flex items-center gap-2">
+        <kbd class="px-2 py-1 bg-gray-800 rounded text-gray-300 border border-gray-700">←</kbd>
+        <kbd class="px-2 py-1 bg-gray-800 rounded text-gray-300 border border-gray-700">→</kbd>
+        Use navigation buttons or arrow keys to browse slides
+    </p>
+
+    <!-- Interactive Logic -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.nav-dot');
+        const slideCounter = document.getElementById('slide-counter');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const totalSlides = slides.length;
+
+        function updateSlides() {
+            // Update visibility of slides
+            slides.forEach((slide, index) => {
+                if (index === currentSlide) {
+                    slide.classList.remove('opacity-0', 'z-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100', 'z-10');
+                } else {
+                    slide.classList.remove('opacity-100', 'z-10');
+                    slide.classList.add('opacity-0', 'z-0', 'pointer-events-none');
+                }
+            });
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove('w-2.5', 'bg-gray-600');
+                    dot.classList.add('w-8', 'bg-orange');
+                } else {
+                    dot.classList.remove('w-8', 'bg-orange');
+                    dot.classList.add('w-2.5', 'bg-gray-600');
+                }
+            });
+
+            // Update text counter
+            slideCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+
+            // Update Previous button state
+            prevBtn.disabled = currentSlide === 0;
+            if (currentSlide === 0) {
+                prevBtn.classList.add('text-gray-600', 'cursor-not-allowed');
+                prevBtn.classList.remove('text-white', 'hover:bg-gray-800', 'hover:text-orange');
+            } else {
+                prevBtn.classList.remove('text-gray-600', 'cursor-not-allowed');
+                prevBtn.classList.add('text-white', 'hover:bg-gray-800', 'hover:text-orange');
+            }
+
+            // Update Next button state
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+            if (currentSlide === totalSlides - 1) {
+                nextBtn.classList.add('text-gray-600', 'cursor-not-allowed');
+                nextBtn.classList.remove('text-white', 'hover:bg-gray-800', 'hover:text-orange');
+            } else {
+                nextBtn.classList.remove('text-gray-600', 'cursor-not-allowed');
+                nextBtn.classList.add('text-white', 'hover:bg-gray-800', 'hover:text-orange');
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlides();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlides();
+            }
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+        }
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        // Initialize icons and initial slide state
+        lucide.createIcons();
+        updateSlides();
+    </script>
+</body>
+
+</html>
